@@ -11,24 +11,20 @@ body{
 font-family: Arial, sans-serif;
 margin:0;
 padding:40px;
-
-/* Hintergrundbild */
 background-image:url("HEIF-Image 2.jpeg");
 background-size:cover;
 background-position:center;
 background-attachment:fixed;
 }
 
-/* Logo */
 .logo{
 display:block;
 margin:0 auto 40px auto;
 max-width:200px;
 }
 
-/* Kurskarten */
 .kurs{
-background:rgba(255,255,255,0.75); /* fast transparent aber lesbar */
+background:rgba(255,255,255,0.78);
 padding:25px;
 margin:25px auto;
 max-width:800px;
@@ -37,15 +33,13 @@ box-shadow:0 6px 20px rgba(0,0,0,0.25);
 backdrop-filter: blur(4px);
 }
 
-/* Überschrift */
 h1{
 text-align:center;
 margin-bottom:40px;
-color:#FFFFFF;
+color:white;
 }
 
-/* Links */
-a{
+.button{
 display:inline-block;
 margin-top:10px;
 text-decoration:none;
@@ -56,7 +50,7 @@ padding:10px 16px;
 border-radius:6px;
 }
 
-a:hover{
+.button:hover{
 opacity:0.85;
 }
 
@@ -65,20 +59,28 @@ opacity:0.85;
 
 <body>
 
-<img src="HEIF-Image.heif" class="logo">
+<img src="IMG_8844.jpeg" class="logo">
 
 <h1>Kunst und Papier – Kurse</h1>
 
 <div class="kurs">
 <h2>Papier küsst Pappe Kurs</h2>
 <p>18.04.2026 – Eine Schachtel wird gebaut</p>
-<a href="18.04.2026.html">Kurs ansehen</a>
+
+<a class="button" href="viewer.html?file=18.04.2026.pdf">
+Kurs ansehen
+</a>
+
 </div>
 
 <div class="kurs">
 <h2>Farbe trifft Handwerk Kurs</h2>
 <p>19/20.06.2026 – Papier marmorieren & Leporello fertigen</p>
-<a href="19-20.06.2026.html">Kurs ansehen</a>
+
+<a class="button" href="viewer.html?file=19-20.06.2026.pdf">
+Kurs ansehen
+</a>
+
 </div>
 
 </body>
