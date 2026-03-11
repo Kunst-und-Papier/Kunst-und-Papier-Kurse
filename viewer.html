@@ -5,8 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+
 body{
 margin:0;
+background:#222;
 }
 
 iframe{
@@ -14,17 +16,41 @@ width:100%;
 height:100vh;
 border:none;
 }
+
+.topbar{
+position:fixed;
+top:0;
+left:0;
+right:0;
+background:black;
+color:white;
+padding:10px;
+font-family:Arial;
+}
+
+.back{
+color:white;
+text-decoration:none;
+margin-right:20px;
+}
+
 </style>
 
 </head>
 
 <body>
 
-<script>
-const params = new URLSearchParams(window.location.search);
-const file = params.get("file");
+<div class="topbar">
+<a class="back" href="index.html">← Zurück</a>
+</div>
 
-document.write('<iframe src="'+file+'"></iframe>');
+<script>
+
+const params = new URLSearchParams(window.location.search);
+const pdf = params.get("pdf");
+
+document.write('<iframe src="'+pdf+'"></iframe>');
+
 </script>
 
 </body>
