@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kunst und Papier – Kurse</title>
 
 <style>
 
 body{
-font-family: Arial;
+font-family: Arial, sans-serif;
 margin:0;
-padding:0;
+padding:40px;
 
 /* Hintergrundbild */
 background-image:url("HEIF-Image 2.jpeg");
@@ -18,46 +19,51 @@ background-position:center;
 background-attachment:fixed;
 }
 
-/* halbtransparenter Bereich über dem Hintergrund */
-.wrapper{
-max-width:800px;
-margin:auto;
-padding:40px;
-background:rgba(255,255,255,0.92);
-min-height:100vh;
-}
-
-h1{
-text-align:center;
-}
-
+/* Logo */
 .logo{
 display:block;
-margin:auto;
-max-width:180px;
-margin-bottom:20px;
+margin:0 auto 40px auto;
+max-width:200px;
 }
 
+/* Kurskarten */
 .kurs{
-background:white;
-padding:20px;
-margin:20px 0;
-border-radius:8px;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
+background:rgba(255,255,255,0.75); /* fast transparent aber lesbar */
+padding:25px;
+margin:25px auto;
+max-width:800px;
+border-radius:10px;
+box-shadow:0 6px 20px rgba(0,0,0,0.25);
+backdrop-filter: blur(4px);
 }
 
+/* Überschrift */
+h1{
+text-align:center;
+margin-bottom:40px;
+color:#111;
+}
+
+/* Links */
 a{
+display:inline-block;
+margin-top:10px;
 text-decoration:none;
 font-weight:bold;
-color:black;
+color:white;
+background:black;
+padding:10px 16px;
+border-radius:6px;
+}
+
+a:hover{
+opacity:0.85;
 }
 
 </style>
 </head>
 
 <body>
-
-<div class="wrapper">
 
 <img src="IMG_8844.jpeg" class="logo">
 
@@ -71,10 +77,8 @@ color:black;
 
 <div class="kurs">
 <h2>Farbe trifft Handwerk Kurs</h2>
-<p>19/20.06.2026 - Papier marmorieren & Leporello fertigen</p>
+<p>19/20.06.2026 – Papier marmorieren & Leporello fertigen</p>
 <a href="19-20.06.2026.html">Kurs ansehen</a>
-</div>
-
 </div>
 
 </body>
